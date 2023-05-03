@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: black;
+    height: 90px;
+    width: 100%;
+    padding: 35px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo{
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    float: left;
+    font-weight: bold;
+    text-shadow: 0 0 8px whitesmoke;
+}
+
+.barra li{
+    list-style: none;
+    display: inline-block;
+}
+
+.barra a{
+    color: white;
+    text-decoration: none;
+}
+
