@@ -24,6 +24,7 @@ header{
 .nav-link{
     color: white;
     align-items: center;
+    text-decoration: none;
 }
 
 .nav-link:hover{
@@ -34,6 +35,8 @@ header{
 .logo{
     height: 60px;
 }
+
+
 
 @media (max-width:886px){
 
@@ -82,6 +85,12 @@ main{
     text-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
+@media (min-width:1407px){
+    .slogan{
+        font-size: 74px;
+    }
+}
+
 .carousel{
     width: 294px;
     border: 2px solid grey;
@@ -116,6 +125,10 @@ footer{
     text-transform: uppercase;
 }
 
+.footer-list a:hover{
+    color: rgb(119, 119, 119);
+}
+
 #redes{
     display: flex;
     align-items: center;
@@ -137,4 +150,61 @@ footer{
     font-family:Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     font-weight: lighter;
+}
+
+/* seccion:productos */
+
+.cont{
+    width: 100%;
+    min-height: 76vh;
+    background-color: black;
+    display: grid;
+    grid-template-columns:repeat(1, 290px) ;
+    grid-template-rows: repeat(4, 386px) ;
+    padding: 40px;
+    grid-gap: 35px;
+    justify-content: center;
+}
+
+.item{
+    border: 3px solid grey;
+    background-size: cover;
+    background-position: center;
+}
+
+.item1{
+    background-image: url(img/remera\ 1.png);
+}
+
+.item2{
+    background-image: url(img/remera\ 2.png);
+}
+
+.item3{
+    background-image: url(img/remera\ 3.png);
+}
+
+.item4{
+    background-image: url(img/remera\ 4.png);
+}
+
+@media only screen and (min-width:720px) {
+    .cont{
+        grid-template-columns: 290px 290px;
+        height: 100vh;
+    }
+}
+
+@media only screen and (min-width:1100px) {
+    .cont{
+        grid-column-gap:110px;
+    }
+} 
+
+@media only screen and (min-width:1350px) {
+    .cont{
+        grid-template-columns:repeat(4, 290px) ;
+        grid-column-gap: 60px;
+        height: 78vh;
+    }
 }
