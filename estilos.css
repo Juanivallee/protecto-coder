@@ -1,3 +1,8 @@
+@font-face {
+    font-family: crisis;
+    src:url(fonts/TS\ Block\ Bold.ttf)
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -5,34 +10,62 @@
 }
 
 header{
-    background-color: black;
-    height: 90px;
-    width: 100%;
-    padding: 35px;
-    font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-transform: uppercase;
+    background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 80px ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase; 
+    padding: 5px;
+    align-items: center;
+}
+
+.nav-link{
+    color: white;
+    align-items: center;
+}
+
+.nav-link:hover{
+    color: grey;
+    text-shadow: 0 0 8px white;
 }
 
 .logo{
-    color: white;
+    height: 60px;
+}
+
+main{
+    background-color: black;
+    height:calc(100vh - 90px);
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.banner{
+    background-image: url(img/parking-space-gc48195519_640.jpg);
+    background-color: black;
+    height: 30vh;
+    width: 96%;
+    background-size: cover;
+    background-position: center;
+    border: solid 2px grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan{
+    color:rgb(255, 255, 255);
+    font-size: 50px;
     text-transform: uppercase;
-    font-size: 20px;
-    float: left;
-    font-weight: bold;
-    text-shadow: 0 0 8px whitesmoke;
+    text-align: center;
+    font-family: crisis;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
-.barra li{
-    list-style: none;
-    display: inline-block;
+.carousel{
+    width: 294px;
+    border: 2px solid grey;
 }
-
-.barra a{
-    color: white;
-    text-decoration: none;
-}
-
