@@ -14,7 +14,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 80px ;
+    min-height: 80px ;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-transform: uppercase; 
     padding: 5px;
@@ -33,6 +33,23 @@ header{
 
 .logo{
     height: 60px;
+}
+
+@media (max-width:886px){
+
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+@media (max-width:763px){
+    .nav-link{
+        font-size:12px ;
+    }
 }
 
 main{
@@ -68,4 +85,56 @@ main{
 .carousel{
     width: 294px;
     border: 2px solid grey;
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    padding-right: 105px;
+}
+
+#menu-titulo{
+    font-weight: bold;
+
+}
+
+.footer-list{
+    list-style: none;
+    text-align: center;
+}
+
+.footer-list a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.808);
+    text-transform: uppercase;
+}
+
+#redes{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.micorreo{
+    font-size: 11px;
+    padding-left: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:100;
+}
+
+#redes a{
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    padding-left: 8px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: lighter;
 }
