@@ -65,6 +65,7 @@ header{
         flex-direction:column ;
         justify-content: center;
         align-items: center;
+        padding-left: 65px;
     }
     .footer-list{
         font-size: 9px;
@@ -126,10 +127,11 @@ main{
 }
 
 footer{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.973);
     display: flex;
     justify-content: space-around;
     color: white;
+    padding-top: 30px;
 }
 
 .menu{
