@@ -55,6 +55,35 @@ header{
     }
 }
 
+@media only screen and (max-width:600px){
+    .nav-link{
+        font-size: 7px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction:column ;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-list{
+        font-size: 9px;
+        flex-basis: 30px;
+    }
+    #redes{
+        flex-basis: 70px;
+    }
+
+    #redes a{
+        padding-right: 80px;
+    }
+
+    .micorreo{
+        padding-right: 50px;
+        padding: 50px;
+    }
+}
+
 main{
     background-color: black;
     height:calc(100vh - 90px);
@@ -208,3 +237,5 @@ footer{
         height: 78vh;
     }
 }
+
+
