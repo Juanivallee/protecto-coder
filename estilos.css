@@ -1,243 +1,227 @@
 @font-face {
-    font-family: crisis;
-    src:url(fonts/TS\ Block\ Bold.ttf)
+  font-family: crisis;
+  src: url(fonts/TS\ Block\ Bold.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+header {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 80px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  padding: 5px;
+  align-items: center;
 }
 
-header{
-    background-color: rgb(0, 0, 0);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    min-height: 80px ;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-transform: uppercase; 
-    padding: 5px;
-    align-items: center;
+.nav-link {
+  color: white;
+  align-items: center;
+  text-decoration: none;
 }
 
-.nav-link{
-    color: white;
-    align-items: center;
-    text-decoration: none;
+.nav-link:hover {
+  color: grey;
+  text-shadow: 0 0 8px white;
 }
 
-.nav-link:hover{
-    color: grey;
-    text-shadow: 0 0 8px white;
+.logo {
+  height: 60px;
 }
 
-.logo{
-    height: 60px;
-}
-
-
-
-@media (max-width:886px){
-
-    header{
-        flex-direction: column;
-    }
-
-    nav{
-        padding: 10px 0px;
-    }
-}
-
-@media (max-width:763px){
-    .nav-link{
-        font-size:12px ;
-    }
-}
-
-@media only screen and (max-width:600px){
-    .nav-link{
-        font-size: 7px;
-    }
-
-    footer{
-        display: flex;
-        flex-direction:column ;
-        justify-content: center;
-        align-items: center;
-        padding-left: 65px;
-    }
-    .footer-list{
-        font-size: 9px;
-        flex-basis: 30px;
-    }
-    #redes{
-        flex-basis: 70px;
-    }
-
-    #redes a{
-        padding-right: 80px;
-    }
-
-    .micorreo{
-        padding-right: 50px;
-        padding: 50px;
-    }
-}
-
-main{
-    background-color: black;
-    height:calc(100vh - 90px);
+@media (max-width: 886px) {
+  header {
     flex-direction: column;
-    justify-content:flex-start;
-    align-items: center;
+  }
+  nav {
+    padding: 10px 0px;
+  }
 }
-
-.banner{
-    background-image: url(img/parking-space-gc48195519_640.jpg);
-    background-color: black;
-    height: 30vh;
-    width: 96%;
-    background-size: cover;
-    background-position: center;
-    border: solid 2px grey;
+@media (max-width: 763px) {
+  .nav-link {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .nav-link {
+    font-size: 7px;
+  }
+  footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 65px;
+  }
+  .footer-list {
+    font-size: 9px;
+    flex-basis: 30px;
+  }
+  #redes {
+    flex-basis: 70px;
+  }
+  #redes a {
+    padding-right: 80px;
+  }
+  .micorreo {
+    padding-right: 50px;
+    padding: 50px;
+  }
+}
+main {
+  background-color: black;
+  height: calc(100vh - 90px);
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.slogan{
-    color:rgb(255, 255, 255);
-    font-size: 50px;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: crisis;
-    text-shadow: 0 0 10px rgb(255, 255, 255);
+.banner {
+  background-image: url(img/parking-space-gc48195519_640.jpg);
+  background-color: black;
+  height: 30vh;
+  width: 96%;
+  background-size: cover;
+  background-position: center;
+  border: solid 2px grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (min-width:1407px){
-    .slogan{
-        font-size: 74px;
-    }
+.slogan {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: crisis;
+  text-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
-.carousel{
-    width: 294px;
-    border: 2px solid grey;
+@media (min-width: 1407px) {
+  .slogan {
+    font-size: 74px;
+  }
+}
+.carousel {
+  width: 294px;
+  border: 2px solid grey;
 }
 
-footer{
-    background-color: rgba(0, 0, 0, 0.973);
-    display: flex;
-    justify-content: space-around;
-    color: white;
-    padding-top: 30px;
+footer {
+  background-color: rgba(0, 0, 0, 0.973);
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  padding-top: 30px;
 }
 
-.menu{
-    display: flex;
-    flex-direction: column;
-    padding-right: 105px;
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding-right: 105px;
 }
 
-#menu-titulo{
-    font-weight: bold;
-
+#menu-titulo {
+  font-weight: bold;
 }
 
-.footer-list{
-    list-style: none;
-    text-align: center;
+.footer-list {
+  list-style: none;
+  text-align: center;
 }
 
-.footer-list a{
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.808);
-    text-transform: uppercase;
+.footer-list a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.808);
+  text-transform: uppercase;
 }
 
-.footer-list a:hover{
-    color: rgb(119, 119, 119);
+.footer-list a:hover {
+  color: rgb(119, 119, 119);
 }
 
-#redes{
-    display: flex;
-    align-items: center;
-    font-size: 20px;
+#redes {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
 }
 
-.micorreo{
-    font-size: 11px;
-    padding-left: 8px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight:100;
+.micorreo {
+  font-size: 11px;
+  padding-left: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
 }
 
-#redes a{
-    text-decoration: none;
-    color: white;
-    font-size: 10px;
-    padding-left: 8px;
-    font-family:Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    font-weight: lighter;
+#redes a {
+  text-decoration: none;
+  color: white;
+  font-size: 10px;
+  padding-left: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: lighter;
 }
 
 /* seccion:productos */
-
-.cont{
-    width: 100%;
-    min-height: 76vh;
-    background-color: black;
-    display: grid;
-    grid-template-columns:repeat(1, 290px) ;
-    grid-template-rows: repeat(4, 386px) ;
-    padding: 40px;
-    grid-gap: 35px;
-    justify-content: center;
+.cont {
+  width: 100%;
+  min-height: 76vh;
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(1, 290px);
+  grid-template-rows: repeat(4, 386px);
+  padding: 40px;
+  grid-gap: 35px;
+  justify-content: center;
 }
 
-.item{
-    border: 3px solid grey;
-    background-size: cover;
-    background-position: center;
+.item {
+  border: 3px solid grey;
+  background-size: cover;
+  background-position: center;
 }
 
-.item1{
-    background-image: url(img/remera\ 1.png);
+.item1 {
+  background-image: url(img/remera\ 1.png);
 }
 
-.item2{
-    background-image: url(img/remera\ 2.png);
+.item2 {
+  background-image: url(img/remera\ 2.png);
 }
 
-.item3{
-    background-image: url(img/remera\ 3.png);
+.item3 {
+  background-image: url(img/remera\ 3.png);
 }
 
-.item4{
-    background-image: url(img/remera\ 4.png);
+.item4 {
+  background-image: url(img/remera\ 4.png);
 }
 
-@media only screen and (min-width:720px) {
-    .cont{
-        grid-template-columns: 290px 290px;
-        height: 100vh;
-    }
+@media only screen and (min-width: 720px) {
+  .cont {
+    grid-template-columns: 290px 290px;
+    height: 100vh;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .cont {
+    grid-column-gap: 110px;
+  }
+}
+@media only screen and (min-width: 1350px) {
+  .cont {
+    grid-template-columns: repeat(4, 290px);
+    grid-column-gap: 60px;
+    height: 78vh;
+  }
 }
 
-@media only screen and (min-width:1100px) {
-    .cont{
-        grid-column-gap:110px;
-    }
-} 
-
-@media only screen and (min-width:1350px) {
-    .cont{
-        grid-template-columns:repeat(4, 290px) ;
-        grid-column-gap: 60px;
-        height: 78vh;
-    }
-}
-
-
+/*# sourceMappingURL=estilos.css.map */
