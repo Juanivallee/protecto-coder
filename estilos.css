@@ -141,6 +141,9 @@ main {
   padding-bottom: 30px;
   text-transform: uppercase;
 }
+.sec-comocomprar p {
+  color: rgb(184, 184, 184);
+}
 .sec-comocomprar img {
   height: 90%;
   width: 70%;
@@ -259,6 +262,62 @@ footer {
     display: grid;
     grid-template-columns: repeat(1, 613px);
     grid-template-rows: repeat(2, 700px);
+  }
+}
+.main-nosotros {
+  height: auto;
+}
+.main-nosotros h1 {
+  font-family: crisis;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  padding: 60px;
+}
+.main-nosotros .sec-nosotros div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-nosotros .sec-nosotros div img {
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.336);
+  width: 80%;
+  height: auto;
+}
+.main-nosotros .sec-nosotros div p {
+  color: rgb(192, 192, 192);
+  padding: 40px;
+  text-align: center;
+  font-size: 14px;
+  padding-block: 80px;
+}
+
+@media only screen and (min-width: 900px) {
+  .main-nosotros h1 {
+    font-size: 55px;
+  }
+  .main-nosotros .sec-nosotros .div-1 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .main-nosotros .sec-nosotros .div-2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .main-nosotros .sec-nosotros .div-2 img {
+    width: 600px;
+  }
+  .main-nosotros .sec-nosotros .div-3 {
+    padding: 60px;
+    display: flex;
+    flex-direction: row;
+  }
+  .main-nosotros .sec-nosotros div {
+    padding: 20px;
+  }
+  .main-nosotros .sec-nosotros div img {
+    width: 50%;
+    height: auto;
   }
 }
 .main-contacto {

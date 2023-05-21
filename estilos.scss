@@ -100,7 +100,7 @@ header{
 }
 
 body{
-background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
 }
 
 main{
@@ -157,6 +157,10 @@ main{
     h3{
         padding-bottom: 30px;
         text-transform: uppercase;
+    }
+
+    p{
+        color: rgb(184, 184, 184);
     }
 
     img{
@@ -291,6 +295,82 @@ footer{
         display: grid;
         grid-template-columns: repeat(1 , 613px);
         grid-template-rows: repeat(2, 700px);
+    }
+}
+
+//seccion nosotros
+
+.main-nosotros{
+    height: auto ;
+
+    h1{
+        font-family: crisis;
+        color: white;
+        font-size: 50px;
+        text-align: center;
+        padding: 60px;
+    }
+
+    .sec-nosotros{
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img{
+                box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.336) ;
+                width: 80%;
+                height: auto;
+            }
+            
+            p{
+                color: rgb(192, 192, 192);
+                padding: 40px;
+                text-align: center;
+                font-size: 14px;
+                padding-block: 80px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:900px) {
+    .main-nosotros{
+
+        h1{
+            font-size: 55px;
+        }
+
+        .sec-nosotros{
+
+            .div-1{
+                display: flex;
+                flex-direction: row-reverse;
+            }
+
+            .div-2{
+                display: flex;
+                flex-direction: column-reverse; 
+                img{
+                    width: 600px;
+                }
+            }
+
+            .div-3{
+                padding: 60px;
+                display: flex;
+                flex-direction: row;
+            }
+
+            div{
+                padding: 20px;
+
+                img{
+                    width: 50%;
+                    height: auto;
+                }
+            }
+        }
     }
 }
 
