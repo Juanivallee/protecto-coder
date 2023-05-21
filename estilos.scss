@@ -12,49 +12,37 @@ $color2: black;
     box-sizing: border-box;
 }
 
-header{
+.navbar{
     background-color: rgb(0, 0, 0);
     border-bottom: 1px solid rgb(29, 29, 29);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    min-height: 80px ;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-transform: uppercase; 
     padding: 5px;
-    align-items: center;
 }
 
 .nav-link{
-    color: white;
-    align-items: center;
-    text-decoration: none;
-    padding-right: 65px;
+    color: white !important;
+    padding-right: 30px !important;
+    padding-top: 14px !important;
 }
 
 .nav-link:hover{
-    color: grey;
+    color: grey !important;
     text-shadow: 0 0 8px white;
 }
 
-.logo{
-    height: 60px;
-}
-
-
-
-@media (max-width:886px){
-
-    header{
-        flex-direction: column;
-    }
-
-    nav{
-        padding: 10px 0px;
-    }
+.navbar-nav{
+    text-align: center;
+    padding-block: 20px;
+    padding-left: 35px;
+    background-color: #000000;
 }
 
 @media (min-width:886px) {
+
+    .nav-link{
+        padding-right: 60px !important;
+    }
 
     .sec-comocomprar{
         display: flex;
@@ -63,17 +51,7 @@ header{
     }
 }
 
-@media (max-width:763px){
-    .nav-link{
-        font-size:12px ;
-    }
-}
-
 @media only screen and (max-width:600px){
-    .nav-link{
-        font-size: 7px;
-    }
-
     footer{
         display: flex;
         flex-direction:column ;
@@ -105,7 +83,7 @@ body{
 
 main{
     background-color: rgb(0, 0, 0);
-    height:calc(100vh - 90px);
+    height: auto;
     padding-top: 20px ;
     flex-direction: column;
     justify-content:flex-start;
@@ -135,6 +113,10 @@ main{
 }
 
 @media (min-width:1407px){
+    .nav-link{
+        padding-right: 100px !important;
+    }
+
     .slogan{
         font-size: 74px;
     }
@@ -436,4 +418,10 @@ footer{
     }
 }
 
-
+@media only screen and (max-width:435px) {
+    .main-contacto{
+        label{
+            font-size: 10px;
+        }
+    }
+}

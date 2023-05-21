@@ -14,17 +14,42 @@
 	<title>CRISIS</title>
 </head>
 <body>
-	<header>
-		<a href="#" class="logo d-flex">
-			<img src="img/crss logoooo.png" alt="logo">
-		</a>
-		<nav class="d-flex">
-			<a href="pages/productos.html" class="nav-link">productos</a>
-			<a href="pages/guia de talles.html" class="nav-link">guía de talles</a>
-			<a href="pages/nosotros.html" class="nav-link">Nosotros</a>
-			<a href="pages/contacto.html" class="nav-link">contacto</a>
-		</nav>
-	</header>
+	<!-- inicio del menu -->
+	<nav class="navbar navbar-expand-md navbar-dark">
+		<div class="container-fluid">
+			<!-- icono -->
+
+			<a class="navbar-brand" href="index.html">
+				<img src="img/crss logoooo.png" alt="logo">
+			</a>
+
+			<!-- boton del menu -->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!-- elementos del menu colapsable -->
+
+			<div class="collapse navbar-collapse" id="menu">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="pages/productos.html">Productos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="pages/guia de talles.html">Guía de talles</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="pages/contacto.html">Contacto</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</nav>
+	<!-- fin del menu -->
 	<main class="d-flex">
 		<section class="banner">
 			<h2 class="slogan">the crisis has begun</h2>
@@ -68,14 +93,15 @@
 			</button>
 		</div>
 		<!-- fin carrusel -->
-	</main>
-	<section class="sec-comocomprar">
+			<section class="sec-comocomprar">
 		<div>
 			<h3 data-aos="zoom-in">como comprar</h3>
 			<p data-aos="zoom-in">Primero ve al sector de productos y elige tu producto (asegurarse que haya en stock) luego ve a guía de talles y ahí te dejamos una ayuda para que puedas sacar tu talle, una vez que tengas tu producto y el talle envíanos por Instagram y por ahí te informaremos acerca de formas de pago y envíos, muchas gracias.</p>
 		</div>
 		<img data-aos="flip-right" src="img/salto.jpeg" alt="paisaje" class="img-comocomprar">
 	</section>
+	</main>
+
 	<footer class="d-flex">
 		<i id=redes class="fa-solid fa-envelope"><span class="micorreo">vallejuanignacio75@gmail.com</span></i>
 		<ul class="menu">
