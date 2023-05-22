@@ -9,7 +9,7 @@
 }
 
 .navbar {
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   border-bottom: 1px solid rgb(29, 29, 29);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
@@ -18,7 +18,7 @@
 
 .nav-link {
   color: white !important;
-  padding-right: 30px !important;
+  padding-right: 20px !important;
   padding-top: 14px !important;
 }
 
@@ -31,12 +31,12 @@
   text-align: center;
   padding-block: 20px;
   padding-left: 35px;
-  background-color: #000000;
+  background-color: black;
 }
 
 @media (min-width: 886px) {
   .nav-link {
-    padding-right: 60px !important;
+    padding-right: 50px !important;
   }
   .sec-comocomprar {
     display: flex;
@@ -44,7 +44,7 @@
     gap: 40px;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 620px) {
   footer {
     display: flex;
     flex-direction: column;
@@ -68,11 +68,11 @@
   }
 }
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: black;
 }
 
 main {
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   height: auto;
   padding-top: 20px;
   flex-direction: column;
@@ -207,6 +207,7 @@ footer {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: all 0.9s;
 }
 .gallery-container .gallery-item h5 {
   color: white;
@@ -214,6 +215,12 @@ footer {
   font-family: Arial, Helvetica, sans-serif;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+.gallery-container .gallery-item .produ:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 5px black;
+  margin-bottom: 10px;
+  box-shadow: 0 0 20px 0 rgb(46, 79, 95);
 }
 
 @media only screen and (min-width: 910px) {
@@ -249,6 +256,13 @@ footer {
     display: grid;
     grid-template-columns: repeat(1, 613px);
     grid-template-rows: repeat(2, 700px);
+  }
+}
+@media only screen and (max-width: 700px) {
+  .contenido-talles {
+    display: grid;
+    grid-template-columns: repeat(1, 350px);
+    grid-template-rows: repeat(2, auto);
   }
 }
 .main-nosotros {
