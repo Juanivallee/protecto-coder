@@ -60,7 +60,7 @@ $color2: black;
         padding-left: 65px;
     }
     .footer-list{
-        font-size: 9px;
+        font-size: 16px;
         flex-basis: 30px;
     }
     #redes{
@@ -162,13 +162,12 @@ footer{
 .menu{
     display: flex;
     flex-direction: column;
-    padding-right: 105px;
+    padding-right: 110px;
     gap: 5px;
 }
 
 #menu-titulo{
     font-weight: bold;
-
 }
 
 .footer-list{
@@ -193,8 +192,8 @@ footer{
 }
 
 .micorreo{
-    font-size: 11px;
-    padding-left: 8px;
+    font-size: 12px;
+    padding-left: 7px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight:100;
 }
@@ -203,7 +202,7 @@ footer{
     text-decoration: none;
     color: white;
     font-size: 10px;
-    padding-left: 8px;
+    padding-left: 7px;
     font-family:Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     font-weight: lighter;
