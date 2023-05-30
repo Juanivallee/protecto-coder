@@ -1,6 +1,6 @@
 @font-face {
   font-family: crisis;
-  src: url(fonts/TS\ Block\ Bold.ttf);
+  src: url(../fonts/TS\ Block\ Bold.ttf);
 }
 * {
   margin: 0;
@@ -34,9 +34,9 @@
   background-color: black;
 }
 
-@media (min-width: 886px) {
+@media (min-width: 960px) {
   .nav-link {
-    padding-right: 50px !important;
+    padding-right: 45px !important;
   }
   .sec-comocomprar {
     display: flex;
@@ -81,7 +81,7 @@ main {
 }
 
 .banner {
-  background-image: url(img/parking-space-gc48195519_640.jpg);
+  background-image: url(../img/parking-space-gc48195519_640.jpg);
   background-color: black;
   height: 30vh;
   width: 96%;
@@ -235,6 +235,15 @@ footer {
     padding-top: 100px;
   }
 }
+.titulo-talles {
+  color: white;
+  text-align: center;
+  margin: 90px;
+  font-family: "Times New Roman", Times, serif;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
 .contenido-talles {
   width: 100%;
   min-height: 76vh;
@@ -251,7 +260,20 @@ footer {
   width: 100%;
 }
 
+.p-talles {
+  color: rgb(180, 180, 180);
+  text-align: center;
+  margin-bottom: 90px;
+  font-size: small;
+}
+
 @media only screen and (min-width: 1100px) {
+  .titulo-talles {
+    text-align: start;
+    font-size: 40px;
+    padding-left: 80px;
+    margin-top: 120px;
+  }
   .contenido-talles {
     display: grid;
     grid-template-columns: repeat(1, 613px);
@@ -325,13 +347,14 @@ footer {
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 70px;
   padding: 2em;
 }
 .main-contacto .contacto {
   text-align: center;
   font-size: 40px;
   color: white;
-  padding-top: 10px;
   padding-bottom: 40px;
 }
 .main-contacto .encuadre {
