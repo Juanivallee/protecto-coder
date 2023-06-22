@@ -9,3 +9,13 @@ function correoUsuario(){
 }
 
 correoUsuario()
+
+
+function calcularCostos () {
+    let totalCompra = prompt ("Cuantas remeras vas a comprar?")
+    let valorRemeras = 7500
+    let calculoProductos = valorRemeras * totalCompra
+    alert ("El costo final de tu compra es de: " + calculoProductos)
+}
+
+calcularCostos()
