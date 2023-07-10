@@ -11,11 +11,15 @@ function correoUsuario(){
 correoUsuario()
 
 
-function calcularCostos () {
-    let totalCompra = prompt ("Cuantas remeras vas a comprar?")
-    let valorRemeras = 7500
-    let calculoProductos = valorRemeras * totalCompra
-    alert ("El costo final de tu compra es de: " + calculoProductos)
-}
+const productos = [
+    {id: 1, Remera: "Crisis in the world", precio: 8500},
+    {id: 2, Remera: "The angel guardian", precio: 9500},
+    {id: 3, Remera: "Butterfly effect", precio: 8500},
+    {id: 4, Remera: "War of the skyes", precio: 9000},
+]
 
-calcularCostos()
+let elegirRemera = prompt ('Que remera buscas ? ' + '1- Crisis in the world ' + '2- The angel guardian ' + '3- Butterfly effect ' + '4- War of the skyes')
+
+const buscado = productos.find(producto => producto.id == elegirRemera) 
+
+console.log(buscado);
