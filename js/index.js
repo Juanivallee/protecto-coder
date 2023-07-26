@@ -23,3 +23,6 @@ let elegirRemera = prompt ('Que remera buscas ? ' + '1- Crisis in the world ' + 
 const buscado = productos.find(producto => producto.id == elegirRemera) 
 
 console.log(buscado);
+
+
+
