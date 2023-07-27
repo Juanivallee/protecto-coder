@@ -13,7 +13,7 @@
 </head>
 <body>
 	<!-- inicio del menu -->
-	<nav class="navbar navbar-expand-lg navbar-dark">
+	<nav class="navbar navbar-expand-lg navbar-dark d-flex justify-content-end">
 		<div class="container-fluid">
 			<!-- icono -->
 
@@ -31,9 +31,6 @@
 			<div class="collapse navbar-collapse" id="menu">
 				<ul class="navbar-nav ms-auto">
 					<li class="nav-item">
-						<a class="nav-link" href="../index.html">Inicio</a>
-					</li>
-					<li class="nav-item">
 						<a class="nav-link" href="productos.html">Productos</a>
 					</li>
 					<li class="nav-item">
@@ -49,26 +46,79 @@
 			</div>
 		</div>
 
+		<div class="container-icon-cart">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+			class="icon-cart">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+			</svg>
+			<div class="count-products">
+				<span id="contador-productos">0</span>
+			</div>
+
+			<div class="container-cart-products hidden-cart">
+				<div class="cart-product">
+					<div class="info-cart-product">
+						<span class="cantidad-producto-carrito">1</span>
+						<p class="titulo-producto-carrito">
+							Remera "crisis in the world"
+						</p>
+						<span class="precio-producto-carrito">$9000</span>
+					</div>
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-close">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+					</svg>
+					
+				</div>
+				<div class="cart-total">
+					<h3>Total:</h3>
+					<span class="total-pagar">$9500</span>
+				</div>
+			</div>
+		</div>
 	</nav>
 	<!-- fin del menu -->
-    <section class="gallery-container">
-        <div class="gallery-item">
-            <img class="produ produ1" src="../img/1 333x500.png" alt="remera 1">
-            <h5>Remera "crisis in the world"</h5>
-        </div>
-        <div class="gallery-item">
-            <img class="produ produ2" src="../img/2 333x500.png" alt="remera 2">
-            <h5>Remera "the angel guardian"</h5>
-        </div>
-        <div class="gallery-item">
-            <img class="produ produ3" src="../img/3 333x500.png" alt="remera 3">
-            <h5>Remera "burtterfly effect"</h5>
-        </div>
-        <div class="gallery-item">
-            <img class="produ produ4" src="../img/4 333x500.png" alt="remera 4">
-            <h5>Remera "war of the skyes"</h5>
-        </div>
-    </section>
+	<div class="container-items">
+		<div class="item">
+			<figure>
+				<img src="../img/1 333x500.png" alt="producto" class="products">
+			</figure>
+			<div class="info-product">
+				<h2>Remera "crisis in the world"</h2>
+				<p class="price">$9000</p>
+				<button>Agregar al carrito</button>
+			</div>
+		</div>
+		<div class="item">
+			<figure>
+				<img src="../img/2 333x500.png" alt="producto" class="products">
+			</figure>
+			<div class="info-product">
+				<h2>Remera "the angel guardian"</h2>
+				<p class="price">$10500</p>
+				<button>Agregar al carrito</button>
+			</div>
+		</div>
+		<div class="item">
+			<figure>
+				<img src="../img/3 333x500.png" alt="producto" class="products">
+			</figure>
+			<div class="info-product">
+				<h2>Remera "the white butterfly"</h2>
+				<p class="price">$9500</p>
+				<button>Agregar al carrito</button>
+			</div>
+		</div>
+		<div class="item">
+			<figure>
+				<img src="../img/4 333x500.png" alt="producto" class="products">
+			</figure>
+			<div class="info-product">
+				<h2>Remera "war of the skyes"</h2>
+				<p class="price">$10000</p>
+				<button>Agregar al carrito</button>
+			</div>
+		</div>
+	</div>
     <footer class="d-flex">
         <i id=redes class="fa-solid fa-envelope"><span class="micorreo">vallejuanignacio75@gmail.com</span></i>
 		<ul class="menu">
@@ -82,7 +132,7 @@
     </footer>
 
 
-
+	<script src="../js/productos.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

@@ -210,55 +210,10 @@ footer{
 
 /* seccion:productos */
 
-.gallery-container{
-    margin-bottom: 60px;
-    display: grid;
-    grid-template-columns: repeat(1, 333px);
-    grid-template-rows: repeat(4, 500px);
-    padding: 40px;
-    grid-gap: 70px;
-    justify-content: center;
 
-    .gallery-item{
 
-        .produ{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: all 0.9s;
-        }
 
-        h5{
-            color: white;
-            font-size: 17px;
-            font-family:Arial, Helvetica, sans-serif;
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
 
-        .produ:hover{
-            transform: scale(1.05);
-            box-shadow: 0 0 5px $color2;
-            margin-bottom: 10px;
-            box-shadow:  0 0 20px 0 rgb(46, 79, 95) ;
-        }
-    }
-}
-
-@media only screen and (min-width:910px) {
-
-    .gallery-container{
-        grid-template-columns: repeat(2, 333px);
-        grid-template-rows: repeat(2, 500px);
-    }
-}
-
-@media only screen and (min-width:1600px) {
-    .gallery-container{
-        grid-template-columns: repeat(4, 333px);
-        padding-top: 100px;
-    }
-}
 
 //seccion guia de talles
 
