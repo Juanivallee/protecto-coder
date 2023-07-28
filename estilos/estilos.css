@@ -52,7 +52,7 @@
   cursor: pointer;
 }
 
-.container-icon-cart{
+.container-icon{
   position: relative;
 }
 
@@ -147,8 +147,14 @@
   display: none ;
 }
 
+.cart-empty{
+  color: rgb(197, 197, 197);
+  padding: 25px 0 10px 0;
+  text-align: center;
+}
+
 @media (max-width: 991px){
-  .container-icon-cart{
+  .container-icon{
     bottom: 53px;
   }
 

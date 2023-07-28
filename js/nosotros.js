@@ -1,6 +1,6 @@
 // carrito
 
-const btnCart = document.querySelector('.container-icon-cart')
+const btnCart = document.querySelector('.container-cart-icon')
 
 const containerCartProducts = document.querySelector('.container-cart-products')
 
