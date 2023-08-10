@@ -34,6 +34,12 @@ const countProducts = document.querySelector('#contador-productos')
 productsList.addEventListener('click', e => {
 
     if(e.target.classList.contains('btn-add-cart')){
+        Toastify({
+            text: 'El producto se agregó al carrito',
+            duration: 2000,
+            gravity: 'bottom',
+        }).showToast() 
+
         const product = e.target.parentElement
 
         const infoProduct = {
@@ -81,6 +87,7 @@ rowProduct.addEventListener('click', e => {
 
 // Funcion para mostrar HTML
 
+
 const showHTML = () => {
 
     if(!allProducts.length){
@@ -88,7 +95,6 @@ const showHTML = () => {
             <p class="cart-empty">Tu carrito está vacío</p>
         `
     }
-
 
 
     // limpiar HTMl

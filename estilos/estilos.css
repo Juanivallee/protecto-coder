@@ -469,6 +469,9 @@ footer {
     grid-template-rows: repeat(2, auto);
   }
 }
+
+/* seccion nostros */
+
 .main-nosotros {
   height: auto;
 }
@@ -525,6 +528,9 @@ footer {
     height: auto;
   }
 }
+
+/* seccion contacto */
+
 .main-contacto {
   max-width: 900px;
   margin-left: auto;
